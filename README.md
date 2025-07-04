@@ -19,14 +19,16 @@ This project demonstrates an end-to-end data engineering pipeline built using **
 ---
 ## 💻 Tech Stack
 
-Screenshot:  
-![GCS Upload](screenshots/2_gcs_upload.png)
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/Techstack.png)
 
 ## 📁 Project Architecture
 Designed using draw.io, which provides rich cloud architecture icons for GCP, AWS, Azure, and Oracle.
 
-Screenshot:  
-![GCS Upload](screenshots/2_gcs_upload.png)
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/Architecture.png)
 
 # Step 1: Create Google Cloud Storage (GCS) - Bucket
 <details>
@@ -38,9 +40,10 @@ Screenshot:
 3. Ensure it's set to Multi-region (e.g., us) and Standard Storage
 4. Grant access using a Service Account with Storage Admin role
 5. Upload after generating the CSV file using your Python script or manually via console. I have uploaded using python code.
- 
-Screenshot:
-![GCS Upload](screenshots/2_gcs_upload.png)
+
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/Bucket.png)
 
 </details>
 
@@ -53,8 +56,9 @@ Screenshot:
 2. Name it (e.g., fp-cdf-dev) and choose Basic edition
 3. Wait around ~20 minutes for setup → Click Launch Instance
 
-Screenshot:
-![GCS Upload](screenshots/2_gcs_upload.png)
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/Cdf.png)
 
 </details>
 
@@ -69,6 +73,10 @@ Screenshot:
   • BigQuery Data Editor (BQ sink)
   • Data Fusion Runner or Editor (pipeline execution)
 3. Download/Copy the service account JSON key to authenticate in Python:
+
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/IAM.png)
 
 </details>
 
@@ -90,8 +98,9 @@ Screenshot:
 6. Upload it directly into your Google Cloud Storage bucket.
 7. Confirm that the file appears in your specified bucket under GCP Console.
 
-Screenshot:  
-![GCS Upload](screenshots/2_gcs_upload.png)
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/Vscode.png)
 
 </details> 
 
@@ -105,9 +114,10 @@ Screenshot:
   • Create a table: dummy_employee
 4. You can also let the BigQuery Sink auto-create the table
 5. After pipeline execution, preview data and schema in the BigQuery console
-
-Screenshot:
-![GCS Upload](screenshots/2_gcs_upload.png)
+   
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/bigquery.png)
 
 </details>
 
@@ -135,8 +145,9 @@ Screenshot:
 3. Monitor the execution logs for any errors. If there are no issues, the pipeline will complete successfully and load the transformed data into BigQuery.
 *Note*: Execution time may vary depending on the volume of data being processed.
    
-Screenshot:
-![GCS Upload](screenshots/2_gcs_upload.png)
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/pipeline.png)
 
 </details>
 
@@ -159,8 +170,13 @@ Open https://lookerstudio.google.com
 
 5. Customize visual styling (color, fonts, etc.)
 
-Screenshot:
-![GCS Upload](screenshots/2_gcs_upload.png)
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/looker.png)
+
+&nbsp;  
+&nbsp; 
+![GCS Upload](screenshots/looker2.png)
 
 </details>
 
