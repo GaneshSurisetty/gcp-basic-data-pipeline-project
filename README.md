@@ -94,9 +94,18 @@ Designed using draw.io, which provides rich cloud architecture icons for GCP, AW
 5. Update the script with your GCS bucket name and service account credentials (JSON key file) to authenticate.
 6. Run the script. It will:  
    • Generate the dummy data  
-   • Save it as `dummy_employee_data.csv` 
-6. Upload it directly into your Google Cloud Storage bucket.
-7. Confirm that the file appears in your specified bucket under GCP Console.
+   • Save it as `dummy_employee_data.csv`
+6. Upload it directly into your Google Cloud Storage bucket. So make sure you properly add your bucket name and key path as mentioned below.
+   
+`
+bucket_name = "fp_*****_bucket"  # 🔁 Replace with your bucket
+`
+
+`
+gcp_key_path = "/Users/harshashetty/Desktop/GCP First Project/*************.json" # 🔁 Replace with your service account key path
+`
+
+8. Confirm that the file appears in your specified bucket under GCP Console.
 
 &nbsp;  
 &nbsp; 
